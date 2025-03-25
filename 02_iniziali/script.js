@@ -4,10 +4,13 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-
+function getInitials(namesArray){
+    return namesArray.map(name => name[0]);
+}
 
 // Invoca la funzione qui e stampa il risultato in console
-
+const initials = getInitials(names);
+console.log(initials);
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
